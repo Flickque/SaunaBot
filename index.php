@@ -61,7 +61,7 @@ $students = [
 $workers = [
 	"Tuesday" => [
 		"17" => [
-			"name" => "Sjoeke"
+			"name" => ""
 		],
 		"18" => [
 			"name" => ""
@@ -84,14 +84,14 @@ $workers = [
 			"name" => ""
 		],
 		"19" => [
-			"name" => ""
+			"name" => "Adriana"
 		],
 		"20" => [
 			"name" => ""
 		],
 		"21" => [
 			"name" => ""
-		],	
+		],
 	],
 	"Saturday" => [
 		"15" => [
@@ -130,15 +130,15 @@ $workers = [
 			"name" => ""
 		],
 		"19" => [
-			"name" => ""
+			"name" => "Stefan"
 		],
 		"20" => [
-			"name" => "Stefan"
+			"name" => "Adriana"
 		],
 		"21" => [
 			"name" => "Zakhar"
 		],
-	],	
+	],
 ];
 
 
