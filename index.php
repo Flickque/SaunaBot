@@ -287,5 +287,5 @@ function startWorker($workers, $weeks, $students){
 
 
 echo '<pre>';
-var_dump(startWorker($workers, $weeks, $students));
+var_dump($_SERVER['DOCUMENT_ROOT']);
 echo '</pre>';
