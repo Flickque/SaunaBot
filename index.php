@@ -157,7 +157,8 @@ function login($url,$login,$pass){
    curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36 OPR/72.0.3815.186");
    curl_setopt($ch, CURLOPT_HEADER, 1);
    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-   curl_setopt($ch, CURLOPT_COOKIEJAR, $_SERVER['DOCUMENT_ROOT'].'/sauna/cookie.txt');
+   //curl_setopt($ch, CURLOPT_COOKIEJAR, $_SERVER['DOCUMENT_ROOT'].'/sauna/cookie.txt');
+   curl_setopt($ch, CURLOPT_COOKIEJAR, '/home/ec2-user/SaunaBot/cookie.txt');
    $result=curl_exec($ch);
 
    
@@ -182,7 +183,9 @@ function reserveSauna($url){
 	curl_setopt($ch, CURLOPT_VERBOSE, 1);
 	curl_setopt($ch, CURLOPT_POST, 1);
 	curl_setopt($ch, CURLOPT_POSTFIELDS,"type='normal'");
-	curl_setopt($ch, CURLOPT_COOKIEFILE, $_SERVER['DOCUMENT_ROOT'].'/sauna/cookie.txt');
+	//curl_setopt($ch, CURLOPT_COOKIEFILE, $_SERVER['DOCUMENT_ROOT'].'/sauna/cookie.txt');
+	curl_setopt($ch, CURLOPT_COOKIEFILE, '/home/ec2-user/SaunaBot/cookie.txt');
+	
 	curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36 OPR/72.0.3815.186");
 
 	$result = curl_exec($ch);
@@ -211,7 +214,9 @@ function Read($url){
 	curl_setopt($ch, CURLOPT_REFERER, $url);
 	curl_setopt($ch, CURLOPT_POST, 0);
 	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-	curl_setopt($ch, CURLOPT_COOKIEFILE, $_SERVER['DOCUMENT_ROOT'].'/sauna/cookie.txt');
+	//curl_setopt($ch, CURLOPT_COOKIEFILE, $_SERVER['DOCUMENT_ROOT'].'/sauna/cookie.txt');
+	curl_setopt($ch, CURLOPT_COOKIEFILE, '/home/ec2-user/SaunaBot/cookie.txt');
+	
 	curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36 OPR/72.0.3815.186");
 
 	$result = curl_exec($ch);
@@ -287,5 +292,5 @@ function startWorker($workers, $weeks, $students){
 
 
 echo '<pre>';
-var_dump($_SERVER['DOCUMENT_ROOT']);
+var_dump(startWorker($workers, $weeks, $students));
 echo '</pre>';
