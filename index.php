@@ -196,7 +196,7 @@ function reserveSauna($url){
 	{
 		curl_close($ch);
 		$curl_json = json_decode($result, true);
-	    return $result;
+	    return $curl_json;
 	}  
 }
 
@@ -257,9 +257,12 @@ function startWorker($workers, $weeks, $students){
 			$auth = login("https://www.omapsoas.fi/index/login", $login, $password);
 			$reservation = reserveSauna($link);
 			$status = [
-				"auth" => $auth,
+				"login" => $login,
+				"password" => $password,
 				"reservation" => $reservation,		
-				"link" => $link
+				"link" => $link,
+				"time" => getDateNum(),
+				"fullTime" => getFullDateTime()
 			];
 		}
 		else{
@@ -286,7 +289,3 @@ function startWorker($workers, $weeks, $students){
 echo '<pre>';
 var_dump(startWorker($workers, $weeks, $students));
 echo '</pre>';
-
-
-
-
