@@ -56,6 +56,10 @@ $students = [
 		"login" => "Sjoeke28",
 		"password" => "Hallo22muisje"
 	],
+	"Max" => [
+		"login" => "max",
+		"password" => "XYDVchVDjk55EjC"
+	]
 ];
 
 $workers = [
