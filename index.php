@@ -85,7 +85,7 @@ $workers = [
 			"name" => ""
 		],
 		"18" => [
-			"name" => "Zakhar"
+			"name" => ""
 		],
 		"19" => [
 			"name" => ""
@@ -111,13 +111,13 @@ $workers = [
 			"name" => ""
 		],
 		"19" => [
-			"name" => ""
+			"name" => "Max"
 		],
 		"20" => [
-			"name" => "Stefan"
+			"name" => "Zakhar"
 		],
 		"21" => [
-			"name" => "Zakhar"
+			"name" => "Stefan"
 		],
 	],
 	"Sunday" => [
@@ -134,7 +134,7 @@ $workers = [
 			"name" => ""
 		],
 		"19" => [
-			"name" => ""
+			"name" => "Max"
 		],
 		"20" => [
 			"name" => "Stefan"

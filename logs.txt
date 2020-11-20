@@ -1,0 +1,10 @@
+
+<pre>array(3) {
+  [0]=>
+  string(7) "No data"
+  [1]=>
+  string(6) "Friday"
+  [2]=>
+  string(18) "2020-12-4 16:30:01"
+}
+</pre>
